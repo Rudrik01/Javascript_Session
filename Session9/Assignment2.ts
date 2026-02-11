@@ -15,13 +15,20 @@ const prices :number[]=[10,20,30,40,50];
 
 
 function calculateTotal(prices:number[]):number{
-    let total :number=prices.reduce((sum,price)=>sum+price,0);
+    // let total :number=prices.reduce((sum,price)=>sum+price,0);
+    const total :number=prices.reduce((sum,price)=>sum+price,0);
     return total;
 
 }
 
+
+// function calculateTotal(prices:number[]){
+//     return prices.reduce((sum,price)=>sum+price,0);
+// }
+
 function check(num1:number,num2:number):string{
-    let result :number=num1+num2;
+    // let result :number=num1+num2;
+    const result :number=num1+num2;
     if(result>100){
         return "The result is greater than 100";
     }else{

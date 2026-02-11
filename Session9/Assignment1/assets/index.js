@@ -18,9 +18,11 @@ save.addEventListener('click',()=>{
         alert("Please enter your name");
     }
     else{
-        const data=input.value;
-        localStorage.setItem('name',data)
-        sessionStorage.setItem('name',data);
+   
+        // localStorage.setItem('name',data)
+        // sessionStorage.setItem('name',data);
+        localStorage.setItem('name',input.value)
+        sessionStorage.setItem('name',input.value);
         alert('Name saved successfully');
     }
 });

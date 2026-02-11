@@ -11,10 +11,15 @@
 // Which errors are caught before running the code?
 var prices = [10, 20, 30, 40, 50];
 function calculateTotal(prices) {
+    // let total :number=prices.reduce((sum,price)=>sum+price,0);
     var total = prices.reduce(function (sum, price) { return sum + price; }, 0);
     return total;
 }
+// function calculateTotal(prices:number[]){
+//     return prices.reduce((sum,price)=>sum+price,0);
+// }
 function check(num1, num2) {
+    // let result :number=num1+num2;
     var result = num1 + num2;
     if (result > 100) {
         return "The result is greater than 100";
@@ -26,3 +31,11 @@ function check(num1, num2) {
 ;
 console.log(calculateTotal(prices));
 console.log(check(60, 50));
+/*
+What happens if you pass a string?
+-->If you pass a string to the calculateTotal function, it will result in a compile-time error because the function expects an array of numbers. Similarly, if you pass a string to the check function, it will also result in a compile-time error because the function expects two numbers as arguments.
+
+Which errors are caught before running the code?
+-->TypeScript's static type checking will catch errors related to type mismatches before running the code. For example, if you try to pass a string to
+
+*/
