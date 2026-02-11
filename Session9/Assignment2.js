@@ -12,7 +12,7 @@
 const prices = [10, 20, 30, 40, 50];
 function calculateTotal(prices) {
     // let total :number=prices.reduce((sum,price)=>sum+price,0);
-    var total = prices.reduce(function (sum, price) { return sum + price; }, 0);
+    const total = prices.reduce((sum, price) => sum + price, 0);
     return total;
 }
 // function calculateTotal(prices:number[]){
@@ -20,7 +20,7 @@ function calculateTotal(prices) {
 // }
 function check(num1, num2) {
     // let result :number=num1+num2;
-    var result = num1 + num2;
+    const result = num1 + num2;
     if (result > 100) {
         return "The result is greater than 100";
     }
