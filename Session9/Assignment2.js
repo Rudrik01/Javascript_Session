@@ -9,7 +9,7 @@
 // Think About:
 // What happens if you pass a string?
 // Which errors are caught before running the code?
-var prices = [10, 20, 30, 40, 50];
+const prices = [10, 20, 30, 40, 50];
 function calculateTotal(prices) {
     // let total :number=prices.reduce((sum,price)=>sum+price,0);
     var total = prices.reduce(function (sum, price) { return sum + price; }, 0);
