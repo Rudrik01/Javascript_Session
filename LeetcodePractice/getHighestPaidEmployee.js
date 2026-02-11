@@ -31,7 +31,8 @@
 
 
 function getHighestPaidEmployee(employees, departmentId) {
-    let salary=-Infinity;
+    // let salary=-Infinity;
+    let salary=0;
     let result=employees.reduce((acc,curr)=>{
         if(curr.departmentId==departmentId){
             if(salary<curr.salary){
