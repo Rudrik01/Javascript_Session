@@ -64,16 +64,7 @@ export default function Login() {
   const navigate = useNavigate();
   const location=useLocation();
   const from = location.state?.from?.pathname ||  "/dashboard";
-  // Redirect if already logged in
-  if (isAuthenticated) {
-    if(user.role==='admin'){
-      return <Navigate to="/admin" replace />;
-    }
-    else{
-        return <Navigate to="/dashboard" replace />;
-    }
-
-  }
+  
 
   const handleSubmit = () => {
     login(role);
