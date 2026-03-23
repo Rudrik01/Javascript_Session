@@ -11,12 +11,15 @@ let input="hello world hello js";
 input=input.split(" ");
 
 const wordCount=input.reduce((acc,word)=>{
-    if(acc[word]){
-        acc[word]++;
-    }
-    else{
-        acc[word]=1
-    }
+    // if(acc[word]){
+    //     acc[word]++;
+    // }
+    // else{
+    //     acc[word]=1
+    // }
+    // return acc;
+    
+    acc[word] ? acc[word]++ : acc[word]=1
     return acc;
 
 },{});
