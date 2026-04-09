@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <style>
+        body{
+            background-color: rgba(127, 255, 212, 0.539);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            border: 4px black solid;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 450px;
+            width: 50vh;
+        }
+        .active{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    Ayush Gajera
+    <button id="btn">Change color</button>
+</div>
+
+<script>
+    const b = document.getElementById("btn");
+
+    b.addEventListener("click", function(e){
+        const d = e.target.closest("div");
+        d.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

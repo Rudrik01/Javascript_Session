@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+</head>
+<body>
+    <h1>Secret Message</h1>
+    <p id="secret-message">Initial Text</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+        const b = document.getElementById("btn");
+
+        b.addEventListener("click", function() {
+            const p = document.getElementById("secret-message");
+            p.innerText = "You found the secret message!";
+        });
+    </script>
+</body>
+</html>
